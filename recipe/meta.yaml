@@ -1,14 +1,13 @@
 {% set name = "procodile" %}
-{% set version = "0.2.0" %}
-{% set python_min = "3.11" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/procodile-{{ version }}.tar.gz
-  sha256: ca664a2b5aeaa3f2c07fc71b52a83fca574199e7cab688cdf8d2c07b25bd18e1
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/procodile-{{ version }}.tar.gz
+  sha256: b12de3b6d2df33c896d7eff6ddab370241abb47b4f6cb05640bb1e64d6628a36
 
 build:
   noarch: python
@@ -26,7 +25,7 @@ requirements:
     - pydantic
     - pyyaml
     - typer >=0.26.0,<1
-    - gavicore >=0.2.0
+    - gavicore >=0.3.0
 
 test:
   imports:
