@@ -1,5 +1,5 @@
 {% set name = "procodile" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/procodile-{{ version }}.tar.gz
-  sha256: b12de3b6d2df33c896d7eff6ddab370241abb47b4f6cb05640bb1e64d6628a36
+  sha256: f14e4d5dcfb36b55e9c43a12e04ee03c9c68e20e417367b682d2e827da45cfa9
 
 build:
   noarch: python
